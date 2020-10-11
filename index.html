@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion</title>
+    <style>
+        @import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font: 16px/1 'Open Sans', sans-serif;
+    background: #e5e5e5;
+}
+
+body {
+    padding:30px 50px;
+}
+
+h1{
+    margin: 0 0 30px;
+}
+
+.accordion{
+    width: 50%;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.accordion-tab > .accordion-toggle{
+    position: absolute;
+    display: none;
+}
+
+.accordion-tab > label{
+    color: #fff;
+    background: #2980b9;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    position: relative;
+    display: block;
+    padding: 13px 40px 13px 20px;
+    border-top: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.accordion-tab > .accordion-content{
+    max-height: 0;
+    transition: all .40s;
+    overflow: hidden;
+}
+
+.accordion-tab > label:after {
+    content: '\f078';
+    position: absolute;
+    top: 13px;
+    right: 20px;
+    font-family: fontawesome;
+    transform: rotate(90deg);
+    transition:transform .30s ;
+}
+
+.accordion-tab > .accordion-toggle:checked ~ label:after{
+    transform: rotate(0deg);
+}
+
+.accordion-tab > .accordion-toggle:checked ~ .accordion-content{
+    max-height: 100vh;
+}
+
+.accordion-tab > .accordion-content p {
+    margin: 15px 0;
+    padding: 0 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+    </style>
+</head>
+<body>
+    <h1>Pure CSS Accordion Menu</h1>
+<div class="accordion">
+    <div class="accordion-tab">
+        <input id="toggle1" type="checkbox" class="accordion-toggle" name="toggle" />
+        <label for="toggle1">Pure CSS Accordion 1</label>
+        <div class="accordion-content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere corrupti illo, quasi corporis quaerat ducimus quo. Repellendus sed ab repellat fuga commodi vel quo, earum totam dolorum numquam quia.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium est autem ad, nobis animi sapiente non aperiam, beatae quos? Iste.
+            </p>
+        </div>
+    </div>
+    
+    <div class="accordion-tab">
+        <input id="toggle2" type="checkbox" class="accordion-toggle" name="toggle" />
+        <label for="toggle2">Pure CSS Accordion 2 </label>
+        <div class="accordion-content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere corrupti illo, quasi corporis quaerat ducimus quo. Repellendus sed ab repellat fuga commodi vel quo, earum totam dolorum numquam quia.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium est autem ad, nobis animi sapiente non aperiam, beatae quos? Iste.
+            </p>
+        </div>
+    </div>
+    
+    <div class="accordion-tab">
+        <input id="toggle3" type="checkbox" class="accordion-toggle" name="toggle" />
+        <label for="toggle3">Pure CSS Accordion 3</label>
+        <div class="accordion-content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere corrupti illo, quasi corporis quaerat ducimus quo. Repellendus sed ab repellat fuga commodi vel quo, earum totam dolorum numquam quia.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium est autem ad, nobis animi sapiente non aperiam, beatae quos? Iste.
+            </p>
+        </div>
+    </div>
+    
+    <div class="accordion-tab">
+        <input id="toggle4" type="checkbox" class="accordion-toggle" name="toggle" />
+        <label for="toggle4">Pure CSS Accordion 4</label>
+        <div class="accordion-content">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus facere corrupti illo, quasi corporis quaerat ducimus quo. Repellendus sed ab repellat fuga commodi vel quo, earum totam dolorum numquam quia.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium est autem ad, nobis animi sapiente non aperiam, beatae quos? Iste.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="anime">
+
+</div>
+</body>
+</html>
